@@ -34,6 +34,8 @@ git commit -m "message"
 commit messages should be short and descriptive
 what if we change many things in one file and want to commit only some of them?
 git add fileName -e  (interactive mode, allows us to choose which changes to add)
+remove lines we do not want to add to staging area by putting # at the start of the line
+then :wq (save and quit)
 
 this is for another commit message
 
