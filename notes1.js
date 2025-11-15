@@ -35,5 +35,9 @@ commit messages should be short and descriptive
 what if we change many things in one file and want to commit only some of them?
 git add fileName -e  (interactive mode, allows us to choose which changes to add)
 
+this is for another commit message
+
+
+
 
 */
