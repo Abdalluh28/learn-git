@@ -51,4 +51,21 @@ to change the editor for commit messages:
 git config --global core.editor "code --wait"  (for VS Code)
 git config --global core.editor "notepad"  (for Notepad on Windows)
 
+
+to resotre a file to the last committed state:
+git restore filename
+
+to restore a file to a specific commit state:
+git restore --source=commitID filename
+
+to undo commits:
+we can use revert, reset, and amend
+
+git revert commitID
+this creates a new commit that undoes the changes made in the specified commit
+
+revert testing
+
+
+
 */
