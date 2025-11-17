@@ -52,7 +52,7 @@ git config --global core.editor "code --wait"  (for VS Code)
 git config --global core.editor "notepad"  (for Notepad on Windows)
 
 
-to resotre a file to the last committed state:
+to restore a file to the last committed state:
 git restore filename
 
 to restore a file to a specific commit state:
@@ -99,4 +99,8 @@ to apply and remove the stashed changes:
 git stash pop
 to drop a stash:
 git stash drop
+
+if we want to check out a previous commit without making changes to the working directory:
+git checkout commitID
+
 */
