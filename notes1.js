@@ -37,7 +37,7 @@ git add fileName -e  (interactive mode, allows us to choose which changes to add
 remove lines we do not want to add to staging area by putting # at the start of the line
 then :wq (save and quit)
 
-this is for another commit message
+this is for another commit message (test)
 
 
 to view commit history:
@@ -51,4 +51,52 @@ to change the editor for commit messages:
 git config --global core.editor "code --wait"  (for VS Code)
 git config --global core.editor "notepad"  (for Notepad on Windows)
 
+
+to resotre a file to the last committed state:
+git restore filename
+
+to restore a file to a specific commit state:
+git restore --source=commitID filename
+
+to undo commits:
+we can use revert, reset, and amend
+
+git revert commitID
+this creates a new commit that undoes the changes made in the specified commit
+
+revert testing
+
+
+to undo the last commit:
+git reset --soft HEAD^
+this keeps the changes in the staging area
+
+git reset --mixed HEAD^
+this keeps the changes in the working directory but removes them from the staging area
+
+git reset --hard HEAD^
+this discards all changes made in the last commit
+
+
+to see the history of commits: 
+git reflog
+
+
+to make aliases for git commands:
+git config --global alias.lol "log --oneline"
+so we can use git lol instead of git log --oneline
+
+
+
+if we have changes in the working directory that we do not want to commit yet, we can stash them:
+git stash
+this saves the changes and reverts the working directory to the last committed state
+to view stashed changes:
+git stash list
+to apply stashed changes:
+git stash apply
+to apply and remove the stashed changes:
+git stash pop
+to drop a stash:
+git stash drop
 */
