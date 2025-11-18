@@ -22,8 +22,9 @@ to delete a branch:
 git branch -d branchname
 
 
-to move commit(s) from one branch to another:
-git rebase branchname
+to move commit(s) from one branch a to another branch b:
+1. switch to branch b
+2. git rebase a
 
 
 */
