@@ -37,6 +37,6 @@ git rebase -i commitID^
 this opens an editor with a list of commits
 starting from the commit after the specified commitID up to the current commit
 
-
+interactive rebase test 1
 
 */
