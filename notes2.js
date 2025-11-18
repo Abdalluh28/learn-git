@@ -52,4 +52,13 @@ to start bisecting:
 git bisect start
 git bisect bad  (mark the current commit as bad)
 git bisect good commitID  (mark a known good commit)
+
+to end bisecting:
+git bisect reset
+
+to know who made this error:
+git blame filename
+
+git blame -C1 filename (to detect code moved from other files)
+
 */
