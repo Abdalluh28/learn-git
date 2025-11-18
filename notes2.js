@@ -41,4 +41,9 @@ interactive rebase test 1
 
 interactive rebase test 2 & 3
 
+
+cherry-pick: to apply specific commits from one branch to another branch
+to cherry-pick a commit:
+git checkout branchname  (switch to the branch where we want to apply the commit)
+git cherry-pick commitID
 */
