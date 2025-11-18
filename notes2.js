@@ -39,4 +39,6 @@ starting from the commit after the specified commitID up to the current commit
 
 interactive rebase test 1
 
+interactive rebase test 2 & 3
+
 */
