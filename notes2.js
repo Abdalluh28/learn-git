@@ -26,5 +26,17 @@ to move commit(s) from one branch a to another branch b:
 1. switch to branch b
 2. git rebase a
 
+*/
+
+/*
+ch 4
+interactive rebase: it is a git tool
+used to edit commit history, combine commits, delete commits, change commit messages etc.
+to start an interactive rebase:
+git rebase -i commitID^
+this opens an editor with a list of commits
+starting from the commit after the specified commitID up to the current commit
+
+
 
 */
