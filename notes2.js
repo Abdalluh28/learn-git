@@ -46,4 +46,10 @@ cherry-pick: to apply specific commits from one branch to another branch
 to cherry-pick a commit:
 git checkout branchname  (switch to the branch where we want to apply the commit)
 git cherry-pick commitID
+
+bisect: to find a specific commit that introduced a bug
+to start bisecting:
+git bisect start
+git bisect bad  (mark the current commit as bad)
+git bisect good commitID  (mark a known good commit)
 */
