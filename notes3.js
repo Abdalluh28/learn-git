@@ -50,7 +50,7 @@ then we need to add the personal access token to our git config
 setting -> developer settings -> personal access tokens -> generate new token
 
 
-to add some contributors to our repository:
+to add some coollaborators to our repository:
 go to repository settings -> coollaborators and teams -> add people
 
 we can add issues as to-do lists for our project
@@ -66,5 +66,22 @@ we can create a pull request to propose changes to the repository
 after creating a pull request, we can review the changes and merge them into the main branch
 
 test for pull request
+
+after merging a pull request, we can delete the feature branch
+using "Delete branch" button on github
+or using git branch -d branchname, then git branch -r -d origin/branchname to delete remote branch
+
+GitHub flow: 
+1. create a branch
+2. make changes and commit
+3. push branch to remote repository
+4. create a pull request
+5. review and merge pull request
+6. delete branch
+
+what if I don't have permission to commit? 
+then I can create a fork of the repository and push changes to my fork
+then create a pull request from my fork to the original repository.
+
 
 */
