@@ -31,6 +31,38 @@ git push -f origin branchname
 and alert the team to reset their local repositories to match the remote repository.
 git reset --hard origin/branchname
 
+*/
+
+
+/*
+GitHub
+
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/username/repo.git
+git push -u origin main
+
+github will ask for username and password
+but now github uses personal access tokens instead of passwords for authentication
+so we need to generate a personal access token from github settings
+then we need to add the personal access token to our git config
+setting -> developer settings -> personal access tokens -> generate new token
+
+
+to add some contributors to our repository:
+go to repository settings -> coollaborators and teams -> add people
+
+we can add issues as to-do lists for our project
+and milestones to group issues and pull requests
+
+we can auto-close issues by including keywords in our commit messages
+git commit -m "add function fixes #issue_number"
+fixes, closes, resolves are some keywords that can be used
+
+we can create a pull request to propose changes to the repository
+after creating a pull request, we can review the changes and merge them into the main branch
+
 
 
 */
