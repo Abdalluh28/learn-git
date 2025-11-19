@@ -60,9 +60,10 @@ we can auto-close issues by including keywords in our commit messages
 git commit -m "add function fixes #issue_number"
 fixes, closes, resolves are some keywords that can be used
 
+test for auto-close issue with pull request
+
 we can create a pull request to propose changes to the repository
 after creating a pull request, we can review the changes and merge them into the main branch
-
 
 
 */
