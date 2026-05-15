@@ -137,6 +137,8 @@ git remote add <remote-repo-name> <remote-repo-link>
 // change the remote repo link
 git remote set-url origin <new-remote-repo-link>
 
+// set the upstream branch
+git push --set-upstream origin main
 
 // create an alias
 git config --global alias.<name> "command"
