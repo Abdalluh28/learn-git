@@ -137,6 +137,15 @@ git remote add <remote-repo-name> <remote-repo-link>
 // change the remote repo link
 git remote set-url origin <new-remote-repo-link>
 
+// pull from GitHub
+git pull
+
+// solve pull conflicts: pull without rebase (3-way merge)
+git pull --no-rebase
+
+// solve pull conflicts: pull with rebase
+git pull --rebase
+
 // set the upstream branch
 git push --set-upstream origin main
 
@@ -149,4 +158,25 @@ git done -m "message"
 
 // show aliasses list
 git config --global -e
+
+
+simple work flow: 
+git switch main
+git pull origin main
+
+git switch -c feature/frontend-dashboard
+
+# work
+git add .
+git commit -m "Build dashboard"
+
+git push -u origin feature/frontend-dashboard
+
+# update branch later (apply the newest main changes to my branch)
+git pull --rebase origin main
+
+# push final version
+git push
+
+# merge through GitHub pull request
 */
